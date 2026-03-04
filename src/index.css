@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,900;1,100;1,900&family=Ubuntu:ital,wght@0,300;0,700;1,300;1,700&display=swap');
+
+@theme {
+  --font-poppins: "Poppins", ui-sans-serif, system-ui;
+  --font-ubuntu: "Ubuntu", ui-sans-serif, system-ui;
+}
