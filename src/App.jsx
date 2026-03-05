@@ -1,9 +1,17 @@
+import { useState } from 'react'
 import './index.css'
 function App() {
+const [menuOpen,setMenuOpen]=useState(false)
+const openMenu=()=> (
+  setMenuOpen(!menuOpen)
 
+)
+const closemenu=()=>(
+  setMenuOpen(false)
+)
   return (
     <>
-      <header className=''>
+      <header className=' '>
         <div className="container mx-auto max-w-[1250px] ">
           <div className="flex items-center justify-between py-5">
             <h1 className='text-[#5f687b] text-[40px] font-bold text-2xl'>eNno</h1>
@@ -17,23 +25,32 @@ function App() {
                 <li><a href="">Dropdown</a></li>
                 <li><a href="">Contact</a></li>
               </ul>
-              <div className='md:hidden '>
+              <div onClick={openMenu} className='md:hidden '>
                 <i class="fa-solid fa-bars  "></i>
               </div>
 
               <button className='bg-[#10bc69] text-white  px-7 py-2  rounded-4xl'><a href="">Get Started</a></button>
             </div>
-
-
+             
           </div>
 
-
         </div>
-
+        {menuOpen &&  <ul className=' absolute   left-1/2 top-[90px] w-[90%] p-2  rounded-2xl   -translate-x-1/2  bg-white font-ubuntu  gap-7'>
+              <i onClick={closemenu} className="fa-solid fa-x"></i>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Services</a></li>
+                <li><a href="">Portfolio</a></li>
+                <li><a href="">Team</a></li>
+                <li><a href="">Dropdown</a></li>
+                <li><a href="">Contact</a></li>
+                
+              </ul> }
       </header>
+      
       <main>
         <div className="container mx-auto py-[60px] max-w-[1250px] ">
-          <div className="grid grid-cols-2">
+          <div className="grid grid-cols-1 md:grid-cols-2">
             <div className='flex flex-col justify-center'>
               <h1 className='font-bold text-[#5f687b] text-5xl'>Elegant and creative solutions</h1>
               <p className='mt-[5px] mb-[30px]'>We are team of talented designers making websites with Bootstrap</p>
@@ -52,7 +69,7 @@ function App() {
 
         </div>
         <div className="container mx-auto  text-[#5f687b] py-[60px] max-w-[1250px] ">
-          <div className=" grid grid-cols-3 gap-5">
+          <div className=" grid grid-cols-1 md:grid-cols-3 gap-5">
             <div className="bg-[#f8f8f8] px-[30px] py-[50px] ">
               <i class="fa-light fa-wave-pulse mb-[10px] text-[36px] text-[#10bc69]"></i>
               <p className='mb-[10px] font-bold text-[20px] hover:text-[#10bc69]'>Lorem Ipsum</p>
@@ -77,7 +94,7 @@ function App() {
 <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
 </div>
 
-<div className='grid grid-cols-2'>
+<div className='grid grid-cols-1 md:grid-cols-2'>
   <img src="/assets/about.png" alt="" />
   <div className=''>
  <p>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</p>
