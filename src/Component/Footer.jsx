@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className='max-w-[1250px] container  mx-auto'>
 
-      <div className="grid grid-cols-1 text-center  md:text-left md:grid-cols-5 py-[50px]">
+      <div className="grid grid-cols-1 text-center  md:ml-[20px] md:text-left md:grid-cols-5 py-[50px]">
         <div className="">
           <h3 className='text-[#5f687b] text-[20px] font-semibold text-2xl mb-[10px]'>eNno</h3>
           <a href='' className=''>A108 Adam Street

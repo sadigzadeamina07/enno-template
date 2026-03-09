@@ -12,8 +12,8 @@ const closemenu=()=>(
   return (
     <>
         <div className="container mx-auto max-w-[1250px] ">
-          <div className="flex items-center justify-between py-5">
-            <h1 className='text-[#5f687b] text-[40px] font-bold text-2xl'>eNno</h1>
+          <div className="flex items-center mx-[20px] justify-between py-5">
+            <h3 className='text-[#5f687b] text-[30px] font-bold '>eNno</h3>
             <div className='flex items-center gap-7'>
               <ul className=' hidden  font-ubuntu text-[#5f687b] lg:flex  gap-7'>
                 <li><a href="/">Home</a></li>
