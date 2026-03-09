@@ -4,7 +4,7 @@ function Footer() {
   return (
     <div className='max-w-[1250px] container  mx-auto'>
 
-      <div className="grid grid-cols-1  md:grid-cols-3  lg:grid-cols-5 py-[50px]">
+      <div className="grid grid-cols-1 text-center  md:text-left md:grid-cols-5 py-[50px]">
         <div className="">
           <h3 className='text-[#5f687b] text-[20px] font-semibold text-2xl mb-[10px]'>eNno</h3>
           <a href='' className=''>A108 Adam Street
@@ -33,10 +33,10 @@ function Footer() {
             <li><a href=""> <i class="fal fa-angle-right"></i>Marketing</a></li>
           </ul>
         </div>
-        <div className="col-span-2">
+        <div className="lg:col-span-2">
           <h3 className='text-[#5f687b] text-[20px] font-semibold text-2xl mb-[10px]'>Follow Us</h3>
           <p>Cras fermentum odio eu feugiat lide par naso tierra videa magna derita valies</p>
-          <ul className='flex gap-5'>
+          <ul className='flex gap-5 justify-center md:justify-start'>
             <li><a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
             <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
             <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>

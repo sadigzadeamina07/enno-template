@@ -1,7 +1,7 @@
 import React from 'react'
 function About() {
   return (
-
+<section id='about'>
     <div className="container mx-auto max-w-[1250px] py-[60px]">
       <div className="text-center py-[30px]">
         <h1 className='text-3xl font-semibold text-[#5f687b] uppercase mb-[20px]'>About</h1>
@@ -10,7 +10,7 @@ function About() {
       <div className='grid grid-cols-1 md:grid-cols-2'>
         <img src="/assets/about.png" alt="" />
         <div className=''>
-          <h3 className='text-3xl mb-[10px] font-semibold text-[#5f687b]'>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
+          <h3 className='text-3xl mb-[10px] font-raleway font-semibold text-[#5f687b]'>Voluptatem dignissimos provident quasi corporis voluptates sit assumenda.</h3>
           <i> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
             magna aliqua. </i>
           <ul className='my-[10px]'>
@@ -27,6 +27,8 @@ function About() {
       </div>
 
     </div>
+</section>
+
   )
 }
 
